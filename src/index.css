@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.card {
+		@apply px-2 py-2 flex flex-col items-center gap-5 border-rose-600 rounded-3xl border;
+	}
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+	body {
+		@apply bg-zinc-200;
+	}
+}
+
+.normal {
+	background-color: blue;
+}
+.fighting {
+	background-color: orange;
+}
+.flying {
+	background-color: aqua;
+}
+.poison {
+	background-color: green;
+}
+.ground {
+	background-color: brown;
+}
+.rock {
+	background-color: azure;
+	color: black;
+}
+.bug {
+	background-color: red;
+}
+.ghost {
+	background-color: blueviolet;
+}
+.steel {
+	background-color: chartreuse;
+}
+.fire {
+	background-color: crimson;
+}
+.water {
+	background-color: darkcyan;
+}
+.grass {
+	background-color: darkgreen;
+}
+.electric {
+	background-color: gold;
+}
+.psyhic {
+	background-color: coral;
+}
+.ice {
+	background-color: cornflowerblue;
+}
+.dragon {
+	background-color: darkseagreen;
+}
+.dark {
+	background-color: black;
+	color: white;
+}
+.fairy {
+	background-color: lightsalmon;
+	color: orangered;
+}
+.unknown {
+	background-color: teal;
+}
+.shadow {
+	background-color: yellowgreen;
+}
+table,
+th,
+td {
+	border: 2px solid crimson;
+}
+
+th {
+	color: firebrick;
+}
+td {
+	color: maroon;
+	font-weight: 700;
 }

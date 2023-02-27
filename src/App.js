@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Header from './components/Header';
+import PokemonCards from './components/PokemonCards';
+import PokemonInfo from './components/PokemonInfo';
+import { useState } from 'react';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [selectedPokemon, setSelectedPokemon] = useState(null);
+
+	return (
+		<>
+			<Header />
+			<section className="flex gap-5 mx-5 lg:mx-auto my-5 max-w-5xl">
+				<PokemonCards setSelectedPokemon={setSelectedPokemon} />
+
+				{selectedPokemon && <PokemonInfo selectedPokemon={selectedPokemon} />}
+			</section>
+		</>
+	);
 }
 
 export default App;
