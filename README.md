@@ -2,9 +2,9 @@
 # Pokedex
 
 ## How to run client app
-npm start or yarn start
-Runs the app in development mode.
-Open http://localhost:3000 to view it in the browser.
+<p> <strong> npm start or yarn start </strong> </p>
+<p>Runs the app in development mode.</p>
+<p>Open http://localhost:3000 to view it in the browser.</p>
 
 ### :space_invader: Tech Stack
 
